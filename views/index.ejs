@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Температура</title>
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+        <div class="container">
+            <nav class="navbar fixed-top navbar-light bg-light">
+                <div class="container">
+                    <a class="navbar-brand" href="/">
+                        <i class="fas fa-cloud"></i> WeatherAPP
+                    </a>
+                </div>
+            </nav>
+        </div>
+
+        <center>
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Weather Node App</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                            <fieldset>
+                                <h6>Название должно быть на английском</h6>
+                                <form action="/" method="post">
+                                    <div class="input-group mb-3">
+                                        <input name="city" type="text" class="form-control ghost-input" placeholder="Введите название города" required>
+                                        <div class="input-group-append">
+                                            <input type="submit" class="btn btn-outline-primary ghost-button" value="Показать">
+                                        </div>
+                                    </div>
+                                </form>
+                                <% if(weather !== null) { %>
+                                    <p><%= weather %></p>
+                                <% } %>
+
+                                <% if(error !== null) { %>
+                                    <p><%= error %></p>
+                                <% } %>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="navbar fixed-bottom navbar-light bg-light">
+                <span class="mx-auto"><a href="https://leontevblog.ru" target="_blank">leontevblog.ru</a> © Леонтьев Андрей, 2018</span>
+            </div>
+        </footer>
+    <!-- Scripts Area -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    </body>
+</html>
