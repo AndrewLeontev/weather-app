@@ -2,7 +2,7 @@
 Hi! This is my little training Node.js application. 
 
 My site: [leontevblog.ru](https://leontevblog.ru)  
-App site: [WeatherAPP](https://pacific-depths-68342.herokuapp.com/)
+App site: [WeatherAPP](https://leontev-weather-app.herokuapp.com/)
 
 
 #### What does it do?
